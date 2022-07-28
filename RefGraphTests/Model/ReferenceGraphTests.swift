@@ -11,13 +11,13 @@ import XCTest
 class ReferenceGraphTest: XCTestCase {
     
     func whenFirstInit_ShouldHaveNoVertices() {
-        let sut = ReferenceGraph()
+        let sut = SomeGraph()
         
         XCTAssertEqual(sut.adjacencyDict.count, 0)
     }
     
-    func whenAddVertex_ShouldAddVertexWithNoAdjacency() {
-        let sut = ReferenceGraph()
+    func whenAddVertex_ShouldAddVertexWithNoEdges() {
+        let sut = SomeGraph()
         let vertex = getVertex(name: "A")
         
         sut.addVertex(vertex)
@@ -26,19 +26,19 @@ class ReferenceGraphTest: XCTestCase {
         XCTAssertEqual(sut.adjacencyDict[vertex], [])
     }
     
-    func whenAddEdge_ShouldAddToDictOnSourceAndDestination() {
-        let sut = ReferenceGraph()
+    func whenAddEdge_ShouldAddEdgeWithCorrectSourceAndDestination() {
+        let sut = SomeGraph()
         let vertexA = getVertex(name: "A")
         let vertexB = getVertex(name: "B")
         
         sut.addEdge(from: vertexA, to: vertexB, weight: 0)
         
-        XCTAssertTrue(sut.adjacencyDict[vertexA]!.contains(vertexB))
-        XCTAssertTrue(sut.adjacencyDict[vertexB]!.contains(vertexA))
+        XCTAssertTrue(sut.adjacencyDict[vertexA]!.contains(Edge(source: vertexA, destination: vertexB, weight: 0)))
+        XCTAssertTrue(sut.adjacencyDict[vertexB]!.contains(Edge(source: vertexB, destination: vertexA, weight: 0)))
     }
     
     func whenAddEdge_ShouldAddDestinationOnlyOnce() {
-        let sut = ReferenceGraph()
+        let sut = SomeGraph()
         let vertexA = getVertex(name: "A")
         let vertexB = getVertex(name: "B")
         
@@ -53,7 +53,7 @@ class ReferenceGraphTest: XCTestCase {
     
     func getVertex(name: String) -> Vertex<Reference> {
         let reference = Reference(name: name, link: URL(string: "")!, description: "")
-        let vertex = Vertex(data: reference, identifier: reference.name)
+        let vertex = Vertex(data: reference)
         
         return vertex
     }

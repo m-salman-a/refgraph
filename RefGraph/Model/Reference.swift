@@ -2,16 +2,19 @@
 //  Reference.swift
 //  RefGraph
 //
-//  Created by Mohammad Alfarisi on 21/07/22.
+//  Created by Mohammad Alfarisi on 28/07/22.
 //
 
 import Foundation
 
 struct Reference: Identifiable {
     
-    var id: UUID = UUID()
-    var name: String
-    var link: URL
-    var description: String
+    let id = UUID()
+    let title: String
+    let url: URL?
+    let description: String?
+    let tags: [String]
     
 }
+
+extension Reference: Hashable { }

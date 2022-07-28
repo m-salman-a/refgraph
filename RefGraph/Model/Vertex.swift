@@ -7,26 +7,40 @@
 
 import Foundation
 
-struct Vertex<T> {
+class Vertex<T>: Identifiable {
     
-    var identifier: String
+    var id = UUID()
     var data: T
+    var pos: Vector2D
+    var vel: Vector2D
     
-    init(data: T, identifier: String) {
-        self.identifier = identifier
+    init(data: T) {
         self.data = data
+        self.pos = Vector2D.zero()
+        self.vel = Vector2D.zero()
     }
     
+    init(data: T, position: Vector2D) {
+        self.data = data
+        self.pos = position
+        self.vel = Vector2D.zero()
+    }
+    
+    init(data: T, position: Vector2D, velocity: Vector2D) {
+        self.data = data
+        self.pos = position
+        self.vel = velocity
+    }
 }
 
-extension Vertex: Hashable {
-    
+extension Vertex: Equatable where T: Equatable {
     static func == (lhs: Vertex<T>, rhs: Vertex<T>) -> Bool {
-        return lhs.identifier == rhs.identifier
+        lhs.data == rhs.data
     }
-    
+}
+
+extension Vertex: Hashable where T: Hashable {
     func hash(into hasher: inout Hasher) {
-        hasher.combine(identifier)
+        hasher.combine(data)
     }
-    
 }

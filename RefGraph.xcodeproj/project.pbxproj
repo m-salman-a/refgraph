@@ -12,12 +12,22 @@
 		A121B62B28890FB80021A174 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A121B62A28890FB80021A174 /* ContentView.swift */; };
 		A121B62D28890FB90021A174 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A121B62C28890FB90021A174 /* Assets.xcassets */; };
 		A121B63028890FB90021A174 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A121B62F28890FB90021A174 /* Preview Assets.xcassets */; };
-		A121B63A28890FB90021A174 /* RefGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A121B63928890FB90021A174 /* RefGraphTests.swift */; };
-		A121B655288911920021A174 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A121B654288911920021A174 /* Reference.swift */; };
 		A121B657288912420021A174 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A121B656288912420021A174 /* Vertex.swift */; };
-		A121B65B288915590021A174 /* Graphable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A121B65A288915590021A174 /* Graphable.swift */; };
-		A121B65D2889167C0021A174 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = A121B65C2889167C0021A174 /* Point.swift */; };
-		A121B65F288973A10021A174 /* ReferenceGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A121B65E288973A10021A174 /* ReferenceGraph.swift */; };
+		A121B65F288973A10021A174 /* SomeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A121B65E288973A10021A174 /* SomeGraph.swift */; };
+		A19F37E22889B90F00F7FB4A /* EdgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F37E12889B90F00F7FB4A /* EdgeView.swift */; };
+		A19F37E42889BDD000F7FB4A /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F37E32889BDD000F7FB4A /* GridView.swift */; };
+		A19F37E62889C4B900F7FB4A /* NodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F37E52889C4B900F7FB4A /* NodeView.swift */; };
+		A1C4AE88288D80260084DA0F /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4AE87288D80260084DA0F /* Edge.swift */; };
+		A1C4AE8A288DB17D0084DA0F /* Vector2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4AE89288DB17D0084DA0F /* Vector2D.swift */; };
+		A1C4AE8C288DC0180084DA0F /* CGPoint+Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4AE8B288DC0180084DA0F /* CGPoint+Coordinate.swift */; };
+		A1E772D32892E09700BF5A67 /* StaticReferencesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E772D22892E09700BF5A67 /* StaticReferencesDataStore.swift */; };
+		A1E772D52892E0D500BF5A67 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E772D42892E0D500BF5A67 /* Reference.swift */; };
+		A1E772D72892E27200BF5A67 /* DummyReferencesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E772D62892E27200BF5A67 /* DummyReferencesDataStore.swift */; };
+		A1E772D92892E27A00BF5A67 /* ReferencesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E772D82892E27A00BF5A67 /* ReferencesDataStore.swift */; };
+		A1E772DB2892E5EA00BF5A67 /* ReferencesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E772DA2892E5EA00BF5A67 /* ReferencesRepository.swift */; };
+		A1E772DF2892ED5100BF5A67 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E772DE2892ED5100BF5A67 /* FormView.swift */; };
+		A1E772E12892EFB100BF5A67 /* AccentButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E772E02892EFB000BF5A67 /* AccentButtonView.swift */; };
+		A1EADDCF288DC26B00EFFF35 /* Graphable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EADDCE288DC26B00EFFF35 /* Graphable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +48,22 @@
 		A121B62C28890FB90021A174 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A121B62F28890FB90021A174 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A121B63528890FB90021A174 /* RefGraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefGraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A121B63928890FB90021A174 /* RefGraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefGraphTests.swift; sourceTree = "<group>"; };
-		A121B654288911920021A174 /* Reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
 		A121B656288912420021A174 /* Vertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
-		A121B65A288915590021A174 /* Graphable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphable.swift; sourceTree = "<group>"; };
-		A121B65C2889167C0021A174 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
-		A121B65E288973A10021A174 /* ReferenceGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceGraph.swift; sourceTree = "<group>"; };
+		A121B65E288973A10021A174 /* SomeGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeGraph.swift; sourceTree = "<group>"; };
+		A19F37E12889B90F00F7FB4A /* EdgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeView.swift; sourceTree = "<group>"; };
+		A19F37E32889BDD000F7FB4A /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		A19F37E52889C4B900F7FB4A /* NodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeView.swift; sourceTree = "<group>"; };
+		A1C4AE87288D80260084DA0F /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		A1C4AE89288DB17D0084DA0F /* Vector2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector2D.swift; sourceTree = "<group>"; };
+		A1C4AE8B288DC0180084DA0F /* CGPoint+Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Coordinate.swift"; sourceTree = "<group>"; };
+		A1E772D22892E09700BF5A67 /* StaticReferencesDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticReferencesDataStore.swift; sourceTree = "<group>"; };
+		A1E772D42892E0D500BF5A67 /* Reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
+		A1E772D62892E27200BF5A67 /* DummyReferencesDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyReferencesDataStore.swift; sourceTree = "<group>"; };
+		A1E772D82892E27A00BF5A67 /* ReferencesDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencesDataStore.swift; sourceTree = "<group>"; };
+		A1E772DA2892E5EA00BF5A67 /* ReferencesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencesRepository.swift; sourceTree = "<group>"; };
+		A1E772DE2892ED5100BF5A67 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		A1E772E02892EFB000BF5A67 /* AccentButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentButtonView.swift; sourceTree = "<group>"; };
+		A1EADDCE288DC26B00EFFF35 /* Graphable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graphable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +113,8 @@
 		A121B62728890FB80021A174 /* RefGraph */ = {
 			isa = PBXGroup;
 			children = (
+				A1E772D12892DF8A00BF5A67 /* Data */,
+				A19F37DE2889B85400F7FB4A /* Helper */,
 				A121B6532889115B0021A174 /* View */,
 				A121B6522889114C0021A174 /* Model */,
 				A121B62828890FB80021A174 /* RefGraphApp.swift */,
@@ -114,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				A106588D2889AF2B001E315B /* Model */,
-				A121B63928890FB90021A174 /* RefGraphTests.swift */,
 			);
 			path = RefGraphTests;
 			sourceTree = "<group>";
@@ -122,11 +143,12 @@
 		A121B6522889114C0021A174 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A121B654288911920021A174 /* Reference.swift */,
+				A1EADDCE288DC26B00EFFF35 /* Graphable.swift */,
 				A121B656288912420021A174 /* Vertex.swift */,
-				A121B65A288915590021A174 /* Graphable.swift */,
-				A121B65C2889167C0021A174 /* Point.swift */,
-				A121B65E288973A10021A174 /* ReferenceGraph.swift */,
+				A121B65E288973A10021A174 /* SomeGraph.swift */,
+				A1C4AE87288D80260084DA0F /* Edge.swift */,
+				A1C4AE89288DB17D0084DA0F /* Vector2D.swift */,
+				A1E772D42892E0D500BF5A67 /* Reference.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,8 +157,32 @@
 			isa = PBXGroup;
 			children = (
 				A121B62A28890FB80021A174 /* ContentView.swift */,
+				A19F37E12889B90F00F7FB4A /* EdgeView.swift */,
+				A19F37E32889BDD000F7FB4A /* GridView.swift */,
+				A19F37E52889C4B900F7FB4A /* NodeView.swift */,
+				A1E772DE2892ED5100BF5A67 /* FormView.swift */,
+				A1E772E02892EFB000BF5A67 /* AccentButtonView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A19F37DE2889B85400F7FB4A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A1C4AE8B288DC0180084DA0F /* CGPoint+Coordinate.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A1E772D12892DF8A00BF5A67 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A1E772D22892E09700BF5A67 /* StaticReferencesDataStore.swift */,
+				A1E772D62892E27200BF5A67 /* DummyReferencesDataStore.swift */,
+				A1E772D82892E27A00BF5A67 /* ReferencesDataStore.swift */,
+				A1E772DA2892E5EA00BF5A67 /* ReferencesRepository.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,12 +285,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A121B65F288973A10021A174 /* ReferenceGraph.swift in Sources */,
-				A121B65B288915590021A174 /* Graphable.swift in Sources */,
-				A121B655288911920021A174 /* Reference.swift in Sources */,
+				A1E772E12892EFB100BF5A67 /* AccentButtonView.swift in Sources */,
+				A1EADDCF288DC26B00EFFF35 /* Graphable.swift in Sources */,
+				A19F37E22889B90F00F7FB4A /* EdgeView.swift in Sources */,
+				A121B65F288973A10021A174 /* SomeGraph.swift in Sources */,
+				A1E772D32892E09700BF5A67 /* StaticReferencesDataStore.swift in Sources */,
+				A1E772D52892E0D500BF5A67 /* Reference.swift in Sources */,
 				A121B62B28890FB80021A174 /* ContentView.swift in Sources */,
 				A121B62928890FB80021A174 /* RefGraphApp.swift in Sources */,
-				A121B65D2889167C0021A174 /* Point.swift in Sources */,
+				A1E772DB2892E5EA00BF5A67 /* ReferencesRepository.swift in Sources */,
+				A19F37E62889C4B900F7FB4A /* NodeView.swift in Sources */,
+				A1C4AE8A288DB17D0084DA0F /* Vector2D.swift in Sources */,
+				A19F37E42889BDD000F7FB4A /* GridView.swift in Sources */,
+				A1E772D92892E27A00BF5A67 /* ReferencesDataStore.swift in Sources */,
+				A1C4AE88288D80260084DA0F /* Edge.swift in Sources */,
+				A1C4AE8C288DC0180084DA0F /* CGPoint+Coordinate.swift in Sources */,
+				A1E772D72892E27200BF5A67 /* DummyReferencesDataStore.swift in Sources */,
+				A1E772DF2892ED5100BF5A67 /* FormView.swift in Sources */,
 				A121B657288912420021A174 /* Vertex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,7 +311,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A106588F2889AF35001E315B /* ReferenceGraphTests.swift in Sources */,
-				A121B63A28890FB90021A174 /* RefGraphTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
