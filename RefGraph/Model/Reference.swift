@@ -14,6 +14,7 @@ struct Reference: Identifiable {
     let url: URL?
     let description: String?
     let tags: [String]
+    let numOpened: Int = 0
     
 }
 

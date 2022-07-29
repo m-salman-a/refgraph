@@ -10,8 +10,17 @@ import SwiftUI
 struct AccentButtonView: View {
     
     let buttonAction: (() -> Void)
-    let color = Color.green
     let buttonText = "Submit"
+    var color = Color.green
+    
+    init(_ buttonAction: @escaping (() -> Void)) {
+        self.buttonAction = buttonAction
+    }
+    
+    init(color: Color, _ buttonAction: @escaping (() -> Void)) {
+        self.color = color
+        self.buttonAction = buttonAction
+    }
     
     var body: some View {
         Button(action: buttonAction, label: {

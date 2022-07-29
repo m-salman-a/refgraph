@@ -11,14 +11,14 @@ import XCTest
 class ReferenceGraphTest: XCTestCase {
     
     func whenFirstInit_ShouldHaveNoVertices() {
-        let sut = SomeGraph()
+        let sut = SomeGraph<Reference>()
         
         XCTAssertEqual(sut.adjacencyDict.count, 0)
     }
     
     func whenAddVertex_ShouldAddVertexWithNoEdges() {
-        let sut = SomeGraph()
-        let vertex = getVertex(name: "A")
+        let sut = SomeGraph<Reference>()
+        let vertex = getVertex(title: "A")
         
         sut.addVertex(vertex)
         
@@ -27,20 +27,20 @@ class ReferenceGraphTest: XCTestCase {
     }
     
     func whenAddEdge_ShouldAddEdgeWithCorrectSourceAndDestination() {
-        let sut = SomeGraph()
-        let vertexA = getVertex(name: "A")
-        let vertexB = getVertex(name: "B")
+        let sut = SomeGraph<Reference>()
+        let vertexA = getVertex(title: "A")
+        let vertexB = getVertex(title: "B")
         
         sut.addEdge(from: vertexA, to: vertexB, weight: 0)
         
-        XCTAssertTrue(sut.adjacencyDict[vertexA]!.contains(Edge(source: vertexA, destination: vertexB, weight: 0)))
-        XCTAssertTrue(sut.adjacencyDict[vertexB]!.contains(Edge(source: vertexB, destination: vertexA, weight: 0)))
+        XCTAssertTrue(sut.adjacencyDict[vertexA]!.contains(vertexB))
+        XCTAssertTrue(sut.adjacencyDict[vertexB]!.contains(vertexA))
     }
     
     func whenAddEdge_ShouldAddDestinationOnlyOnce() {
-        let sut = SomeGraph()
-        let vertexA = getVertex(name: "A")
-        let vertexB = getVertex(name: "B")
+        let sut = SomeGraph<Reference>()
+        let vertexA = getVertex(title: "A")
+        let vertexB = getVertex(title: "B")
         
         sut.addEdge(from: vertexA, to: vertexB, weight: 0)
         sut.addEdge(from: vertexA, to: vertexB, weight: 0)
@@ -51,8 +51,8 @@ class ReferenceGraphTest: XCTestCase {
     
     // MARK: Helpers
     
-    func getVertex(name: String) -> Vertex<Reference> {
-        let reference = Reference(name: name, link: URL(string: "")!, description: "")
+    func getVertex(title: String) -> Vertex<Reference> {
+        let reference = Reference(title: title, url: URL(string: ""), description: "", tags: [])
         let vertex = Vertex(data: reference)
         
         return vertex

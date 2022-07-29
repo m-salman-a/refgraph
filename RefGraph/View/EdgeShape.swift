@@ -8,26 +8,6 @@
 import Foundation
 import SwiftUI
 
-struct EdgeView: View {
-    
-    var start: CGPoint
-    var end: CGPoint
-    var animatableData: AnimatablePair<AnimatablePair<CGFloat, CGFloat>, AnimatablePair<CGFloat, CGFloat>> {
-        get { AnimatablePair(AnimatablePair(start.x, start.y), AnimatablePair(end.x, end.y)) }
-        set {
-            start = CGPoint(x: newValue.first.first, y: newValue.first.second)
-            end = CGPoint(x: newValue.second.first, y: newValue.second.second)
-        }
-    }
-    
-    var body: some View {
-        EdgeShape(start: start, end: end)
-            .fill(.red)
-            .frame(width: 100, height: 100, alignment: .center)
-            .border(.red, width: 16)
-    }
-}
-
 struct EdgeShape: Shape {
     
     var start: CGPoint
